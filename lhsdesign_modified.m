@@ -66,7 +66,7 @@ for i=1:p
     SLOPE(:,i)=ones(n,1).*slope(i);
     OFFSET(:,i)=ones(n,1).*offset(i);
 end
-
+ 
 X_normalized = lhsdesign(n,p); 
 
 X_scaled=SLOPE.*X_normalized+OFFSET; 
